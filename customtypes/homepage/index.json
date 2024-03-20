@@ -1,7 +1,7 @@
 {
+  "format": "page",
   "id": "homepage",
   "label": "Homepage",
-  "format": "page",
   "repeatable": false,
   "status": true,
   "json": {
@@ -19,10 +19,10 @@
       }
     },
     "SEO & Metadata": {
-      "meta_title": {
+      "meta_description": {
         "config": {
-          "label": "Meta Title",
-          "placeholder": "A title of the page used for social media and search engines"
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
         },
         "type": "Text"
       },
@@ -37,10 +37,10 @@
         },
         "type": "Image"
       },
-      "meta_description": {
+      "meta_title": {
         "config": {
-          "label": "Meta Description",
-          "placeholder": "A brief summary of the page"
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
         },
         "type": "Text"
       }

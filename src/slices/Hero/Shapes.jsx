@@ -48,7 +48,7 @@ function Geometries() {
         {
             position:[0,0,0],
             r: 0.5,
-            geometry:  new THREE.TorusKnotGeometry( 4.322, 0.8, 680, 8, 6 ,4 ) , // knot DEV ki
+            geometry:  new THREE.TorusKnotGeometry( 2.322, 0.6, 580, 8, 6 ,4 ) ,
 
         },
         // {

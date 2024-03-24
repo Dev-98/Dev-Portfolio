@@ -130,7 +130,7 @@ function DesktopMenu({
                         >
                             <span
                                 className={clsx(
-                                    "absolute inset-0 z-0 h-full rounded bg-rose-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
+                                    "absolute inset-0 z-0 h-full rounded bg-teal-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
                                     pathname.includes(asLink(link) as string)
                                         ? "translate-y-6"
                                         : "translate-y-8"

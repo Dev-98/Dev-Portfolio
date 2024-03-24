@@ -47,14 +47,14 @@ function Geometries() {
         // },
         {
             position:[0,0,0],
-            r: 0.5,
-            geometry:  new THREE.TorusKnotGeometry( 2.322, 2.08, 176, 8, 17, 9 ) ,
+            r: 0.1,
+            geometry:  new THREE.TorusKnotGeometry( 2.622, 0.8, 116, 5, 11, 9 ) ,
 
         },
         // {
         //     position:[0,0,0],
-        //     r: 0.5,
-        //     geometry:  new THREE.TorusKnotGeometry( 2.622, 0.6, 580, 8, 8 ,5 ) , // knot
+        //     r: 0.9,
+        //     geometry:  new THREE.CapsuleGeometry( 2.9, 6, 9, 20 ) , // knot
         // },
         // {
         //     position: [1.6, 1.6, -4],
@@ -79,18 +79,18 @@ function Geometries() {
         new THREE.MeshStandardMaterial({
         roughness: 0,
         metalness: 0.5,
-        color: 0x2980b9,
+        color: 0x2C9F9F,
         }),
         new THREE.MeshStandardMaterial({
         color: 0x2c3e50,
         roughness: 0.1,
         metalness: 0.5,
         }),
-        new THREE.MeshStandardMaterial({
-            color: 0x006D5B,
-            roughness: 0.1,
-            metalness: 0.5,
-            }),
+        // new THREE.MeshStandardMaterial({
+        //     color: 0x006D5B,
+        //     roughness: 0.1,
+        //     metalness: 0.5,
+        //     }),
     ]; 
 
 
@@ -126,7 +126,7 @@ function Geometry({r,position,geometry,soundEffects,materials}){
         gsap.to(mesh.rotation,{
             // x:`+=${gsap.utils.random(0,2)}`,
             // y:`+=${gsap.utils.random(0,2)}`,
-            z:`-=3`,
+            z:`+=3`,
             duration: 2,
             ease: "elastic.out(1,0.3)",
             yoyo:true,
@@ -157,8 +157,8 @@ function Geometry({r,position,geometry,soundEffects,materials}){
 
             // Rotate on the z-axis
         gsap.to(meshRef.current.rotation, {
-            z: "+=360", // Adjust the rotation amount as needed
-            duration: gsap.utils.random(180, 192),
+            z: "-=400", // Adjust the rotation amount as needed
+            duration: gsap.utils.random(108,120),
             repeat: -1, // Repeat indefinitely
             ease: "linear",
             onRepeat: () => {
